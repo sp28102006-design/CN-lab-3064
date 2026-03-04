@@ -1,0 +1,5 @@
+importsysfrom scapy.all
+import *
+functiondef packet_handler(packet):
+print(packet.show())
+interfacesniff(iface='eth0',prn=packet_handler)
